@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<link rel="icon" href="img/gg.png">
+		<TITLE>
+			NIBM GPA Calculator
+		</TITLE>
+
+		<meta name="viewport"
+ content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</HEAD>
+
+	<BODY>
+		<div class="container">
+			<div class="jumbotron top-box">
+			  <h1>NIBM GPA Calculator</h1>
+			  <p class="lead">Hash X Crop. #SMD</p>
+			  <p class="lead">Be sure to select a grade point at once.
+				  If you selected more than two grade points,be sure to refresh the page.Be sure not to enter values if the subject does not have relevant results.</p>
+			</div>
+
+
+		<SCRIPT type="text/javascript" src="JS/functions.js"></SCRIPT>
+
+
+
+		<div id="GPACalc" class="container-fluid  container " >
+
+		
+
+		<!-- Beginning of the table -->
+		<table class="table table-hover">
+			<tr>
+				<td>Course Name</td>
+				<td>Credit </td>
+				<td>Grade Point</td>
+			</tr>
+
+<!-- First row -->
+
+			<tr>
+				<td>
+
+					Introduction to Computer Science
+
+			</td>
+			<td>
+			<select class="form-control" onchange="changeVal()" id="b1">
+				<option value="0">-Select-</option>
+				
+				<option value="3">3</option>
+				
+				
+			</select>
+								</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c1">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="4">A</option>
+				<option value="3.7">A-</option>
+				<option value="3.3">B+</option>
+				<option value="3">B</option>
+				<option value="2.7">B-</option>
+				<option value="2.3">C+</option>
+				<option value="2">C</option>
+				<option value="1.7">C-</option>
+				<option value="1.3">D+</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select>
+		</td>
+	</tr>
+<!-- Second row -->
+
+<tr>
+	<td>
+
+		Mathematics for Computing
+
+</td>
+<td>
+<select class="form-control" onchange="changeVal()" id="b2">
+	<option value="0">-Select-</option>
+	<option value="3">3</option>
+	
+</select>
+					</td>
+	<td>
+<select class="form-control" onchange="changeGrd()" id="c2">
+	<option value="0">-Select-</option>
+	<option value="4">A+</option>
+	<option value="4">A</option>
+	<option value="3.7">A-</option>
+	<option value="3.3">B+</option>
+	<option value="3">B</option>
+	<option value="2.7">B-</option>
+	<option value="2.3">C+</option>
+	<option value="2">C</option>
+	<option value="1.7">C-</option>
+	<option value="1.3">D+</option>
+	<option value="1">D</option>
+	<option value="0">F</option>
+</select>
+</td>
+</tr>
+<!-- Third row -->
+		<tr>
+				<td>
+					Programming Fundamentals
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b3">
+				<option value="0">-Select-</option>
+				<option value="3">3</option>
+				
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c3">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="4">A</option>
+				<option value="3.7">A-</option>
+				<option value="3.3">B+</option>
+				<option value="3">B</option>
+				<option value="2.7">B-</option>
+				<option value="2.3">C+</option>
+				<option value="2">C</option>
+				<option value="1.7">C-</option>
+				<option value="1.3">D+</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select>
+	</td>
+			</tr>
+<!-- Forth row -->
+<tr>
+<td>
+	Database Management Systems
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b4">
+				<option value="0">-Select-</option>
+				<option value="3">3</option>
+				
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c4">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="4">A</option>
+				<option value="3.7">A-</option>
+				<option value="3.3">B+</option>
+				<option value="3">B</option>
+				<option value="2.7">B-</option>
+				<option value="2.3">C+</option>
+				<option value="2">C</option>
+				<option value="1.7">C-</option>
+				<option value="1.3">D+</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select>
+	</td>
+</tr>
+<!-- Fifth row -->
+	<tr>
+	<td>
+		Computer Technology
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b5">
+				<option value="0">-Select-</option>
+				<option value="3">3</option>
+				
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c5">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="4">A</option>
+				<option value="3.7">A-</option>
+				<option value="3.3">B+</option>
+				<option value="3">B</option>
+				<option value="2.7">B-</option>
+				<option value="2.3">C+</option>
+				<option value="2">C</option>
+				<option value="1.7">C-</option>
+				<option value="1.3">D+</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select>
+	</td>
+</tr>
+<!-- Sixsth row -->
+<tr>
+	<td>
+		Object Oriented Programming
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b6">
+				<option value="0">-Select-</option>
+				<option value="3">3</option>
+				
+				
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c6">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="4">A</option>
+				<option value="3.7">A-</option>
+				<option value="3.3">B+</option>
+				<option value="3">B</option>
+				<option value="2.7">B-</option>
+				<option value="2.3">C+</option>
+				<option value="2">C</option>
+				<option value="1.7">C-</option>
+				<option value="1.3">D+</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+				
+			</select>
+	</td>
+</tr>
+	<!-- Buttons -->
+	<tr>
+		<td>
+			Computer Architecture and Networks
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b7">
+					<option value="0">-Select-</option>
+					<option value="4">4</option>
+					
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c7">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			GUI Application Development
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b8">
+					<option value="0">-Select-</option>
+					<option value="3">3</option>
+					
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c8">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Operating Systems
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b9">
+					<option value="0">-Select-</option>
+					<option value="4">4</option>
+					
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c9">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enterprise Application Development-1
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b10">
+					<option value="0">-Select-</option>
+					<option value="3">3</option>
+				
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c10">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Web Application Development
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b11">
+					<option value="0">-Select-</option>
+					<option value="4">4</option>
+					
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c11">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Software Engineering
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b12">
+					<option value="0">-Select-</option>
+					<option value="4">4</option>
+					
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c12">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Software Engineering Project
+	
+					</td>
+					<td>
+				<select class="form-control" onchange="changeVal()" id="b13">
+					<option value="0">-Select-</option>
+					<option value="5">5</option>
+					
+				</select>
+								</td>
+					<td>
+				<select class="form-control" onchange="changeGrd()" id="c13">
+					<option value="0">-Select-</option>
+					<option value="4">A+</option>
+					<option value="4">A</option>
+					<option value="3.7">A-</option>
+					<option value="3.3">B+</option>
+					<option value="3">B</option>
+					<option value="2.7">B-</option>
+					<option value="2.3">C+</option>
+					<option value="2">C</option>
+					<option value="1.7">C-</option>
+					<option value="1.3">D+</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+					
+				</select>
+		</td>
+	</tr>
+
+
+		</table>
+
+
+
+<!-- Calculate Button -->
+		<button class="btn btn-primary" onclick="viewResults()">Calculate</button>
+<!--Reset Button -->
+		<button class="btn btn-default" onclick="clear()">Clear</button>
+		<br/>
+
+<br/>
+<br/>
+<!-- Results Should be displayed here -->
+<p id="Result"></p>
+
+		</div>
+
+</BODY>
+
+</HTML>
