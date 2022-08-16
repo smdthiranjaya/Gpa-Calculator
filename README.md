@@ -3,4 +3,4 @@ Gpa-Calculator
 
 Hosted by Azure Websites
 
-gpacal.epizy.com
+[gpacal.epizy.com](http://gpacal.epizy.com/)
