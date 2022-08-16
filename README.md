@@ -3,4 +3,4 @@ Gpa-Calculator
 
 Hosted by Azure Websites
 
-https://nibmgpacal.azurewebsites.net/
+gpacal.epizy.com
